@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$grey-1: hsl(0, 0%, 63%);
+$grey-2: hsl(0, 0%, 27%);
+
+@mixin normal-txt {
+    font: {
+        family: 'league spartan';
+        weight: 500;
+    }  
+    color: $grey-1; 
+}
+
+@mixin main-heading {
+    font: {
+        family: 'league spartan';
+        weight: 700;
+        size: 2rem; 
+    }
+    color: $black;
+}
+
+@mixin normal-heading {
+    text-transform: uppercase;
+    letter-spacing: .3rem;       
+    font: { 
+        family: 'league spartan';
+        weight: 700;
+        size: .85rem;   
+    } 
+    color: $black;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    max-width: 100%;
+    font-size: 14px;  
+    @include normal-txt;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;    
+}
+
+a {
+    text-decoration: none; 
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+ 

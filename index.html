@@ -5,55 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./app.js"></script>
   <title>Frontend Mentor | Room homepage</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  Home
-  Shop
-  About
-  Contact
 
-  Discover innovative ways to decorate
+    <nav>
+      <button type="button" class="nav__button nav__button--open-menu" aria-label="open menu button"></button>
+      <button type="button" class="nav__button nav__button--close-menu" aria-label="close menu button"></button>
+      <img class="nav__logo" src="./images/logo.svg" alt="logo consisting of the word 'room'">
+      <div class="nav__empty-el" aria-label="empty element purely for styling purposes"></div>
+      <ul class="nav__link-list">
+        <li><a class="nav__link nav__link--mobile" href="#">Home</a></li>
+        <li><a class="nav__link nav__link--mobile" href="#">Shop</a></li>
+        <li><a class="nav__link nav__link--mobile" href="#">About</a></li>
+        <li><a class="nav__link nav__link--mobile" href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+    <div class="backdrop"></div>
 
-  We provide unmatched quality, comfort, and style for property owners across the country. 
-  Our experts combine form and function in bringing your vision to life. Create a room in your 
-  own style with our collection and make your property a reflection of you and what you love.
-
-  Shop now
-
-  We are available all across the globe
-
-  With stores all over the world, it's easy for you to find furniture for your home or place of business. 
-  Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
-  store locator. Any questions? Don't hesitate to contact us today.
-
-  Shop now
-
-  Manufactured with the best materials
-
-  Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
-  to ensure that every product is made as perfect and as consistent as possible. With three decades of 
-  experience in this industry, we understand what customers want for their home and office.
-
-  Shop now
-
-  About our furniture
-
-  Our multifunctional collection blends design and function to suit your individual taste.
-  Make each room unique, or pick a cohesive theme that best express your interests and what
-  inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-  or anything in between. Product specialists are available to help you create your dream space.
+    <div class="main-img">
+      <div class="main-img__buttons">
+        <button type="button" class="main-img__button main-img__button--prev" aria-label="previous image button"></button>
+        <button type="button" class="main-img__button main-img__button--next" aria-label="next image button"></button>
+      </div>
+    </div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div class="main__description">
+      <h1 class="description__heading">Discover innovative ways to decorate</h1>
+      <p class="description__text">We provide unmatched quality, comfort, and style for property owners across the country. 
+        Our experts combine form and function in bringing your vision to life. Create a room in your 
+        own style with our collection and make your property a reflection of you and what you love.</p>
+        <a class="description__link" href="#">Shop now <span class="link__arrow" aria-label="icon of an arrow"></span></a>
+      </div>
+     
+    <div class="image image--dark" aria-label="image of interior design (black armchairs and a round table)"></div>
+     
+    <div class="main__about">
+      <h2 class="about__heading">About our furniture</h2>
+      <p class="about__text">Our multifunctional collection blends design and function to suit your individual taste.
+        Make each room unique, or pick a cohesive theme that best express your interests and what
+        inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+        or anything in between. Product specialists are available to help you create your dream space.</p>
+    </div>  
+  
+    <div class="image image--light" aria-label="image of a white chair with modern design in a room flooded with light"></div>
+  </main>
+
+  <footer>
+    <div class="footer__attribution">
+      Challenge by <a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a class="footer__link" href="#">tortaruga</a>.
+    </div>
+  </footer>
+  
 </body>
 </html>
