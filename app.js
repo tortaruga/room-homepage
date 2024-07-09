@@ -119,7 +119,7 @@ closeMenuBtn.addEventListener('click', () => {
     body.style.overflow = 'auto';
 })
 
-
-if (window.innerWidth > 700) {
+ 
+if (window.innerWidth > 800) {
     main.appendChild(mainImgButtons);
 }

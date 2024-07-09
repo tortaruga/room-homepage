@@ -93,7 +93,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   width: 30%;
-  height: 3rem;
+  height: 2.5rem;
 }
 
 .main-img__button {
@@ -215,7 +215,7 @@ footer {
   main {
     display: grid;
     grid-template-columns: 30% 30% 10% 30%;
-    grid-template-rows: 50% 10% 40%;
+    grid-template-rows: 55% 5% 40%;
     min-height: 100vh;
     width: 100%;
   }

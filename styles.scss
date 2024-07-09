@@ -69,13 +69,13 @@ nav {
     align-items: center;
     justify-content: space-between;
     width: 30%;
-    height: 3rem;
+    height: 2.5rem;
 }
 
 .main-img__button {
-   width: 50%; 
-   height: 100%; 
-}
+   width: 50%;  
+   height: 100%;
+} 
 
 .main-img__button--prev {
  background: $black url(./images/icon-angle-left.svg) no-repeat;
@@ -87,7 +87,6 @@ nav {
    }
 }
 
-
 .main-img__button--next {
     background: black url(./images/icon-angle-right.svg) no-repeat;
     background-position: center;
@@ -96,7 +95,7 @@ nav {
         background: $grey-1 url(./images/icon-angle-right.svg) no-repeat;
         background-position: center;
        }
-   }
+    }
 
 .main__description, .main__about {
     padding: 3rem 2rem;  
@@ -181,9 +180,9 @@ footer {
     main {
         display: grid;
         grid-template-columns: 30% 30% 10% 30%;
-        grid-template-rows: 50%  10% 40%;
+        grid-template-rows: 55%  5% 40%;
         min-height: 100vh;  
-        width: 100%; 
+        width: 100%;  
     }
 
 
