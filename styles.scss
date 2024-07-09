@@ -180,11 +180,10 @@ footer {
     main {
         display: grid;
         grid-template-columns: 30% 30% 10% 30%;
-        grid-template-rows: 55%  5% 40%;
-        min-height: 100vh;  
-        width: 100%;  
+        grid-template-rows: 55%  1fr 40%;
+        min-height: 100vh; 
+        width: 100%;   
     }
-
 
     .main-img {
         @include background-img($hero-1-desktop);
