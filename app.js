@@ -25,6 +25,12 @@ const desktopHeroImgs = [
     'url(./images/desktop-image-hero-3.jpg)'
 ]
 
+const imageDescriptions = [
+    "image of white chairs and a table with a bonsai on top",
+    "image of three modern design chairs, one dark yellow, one greyish, one pale green but don't quote me on it cause i'm slightly colorblind",
+    "image of a black chair"
+]
+
 const descriptionHeadings = [
     'Discover innovative ways to decorate',
     'We are available all across the globe',
@@ -48,6 +54,11 @@ function changeText(index) {
 function handleSlide(index) {
     changeHeading(index);
     changeText(index);
+    changeImgDescription(index);
+}
+
+function changeImgDescription(index) {
+   mainImage.ariaLabel = imageDescriptions[index]
 }
 
 let mobilePhotoIndex = 0;
@@ -78,7 +89,6 @@ if (window.innerWidth > 700) {
         }
         changeImage(mobileHeroImgs, mobilePhotoIndex);
         handleSlide(mobilePhotoIndex);
-
     });
     nextImgBtn.addEventListener('click', () => {
         mobilePhotoIndex++;
@@ -86,8 +96,7 @@ if (window.innerWidth > 700) {
             mobilePhotoIndex = desktopHeroImgs.length - 1;
         }
         changeImage(mobileHeroImgs, mobilePhotoIndex);
-        handleSlide(mobilePhotoIndex);
-
+        handleSlide(mobilePhotoIndex);  
     });
 }
 
@@ -119,7 +128,15 @@ closeMenuBtn.addEventListener('click', () => {
     body.style.overflow = 'auto';
 })
 
- 
-if (window.innerWidth > 800) {
-    main.appendChild(mainImgButtons);
+handleResponsiveDesign();
+
+window.addEventListener('resize', handleResponsiveDesign)
+
+
+function handleResponsiveDesign() {
+    if (window.innerWidth > 900) {  
+        main.appendChild(mainImgButtons);
+    } else {
+        mainImage.appendChild(mainImgButtons);
+    }
 }
