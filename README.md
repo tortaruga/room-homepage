@@ -8,19 +8,14 @@ This is a solution to the [Room homepage challenge on Frontend Mentor](https://w
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
-I think it works. I can never be sure, because at somepoint the layout changed whenever I refreshed the page, with the same exact grid behaving differently everytime, for who knows what ungodly reason. Maybe it's because last night I half-asleepedly thought to myself I'd sell my soul to the devil to be the most gorgeous creature to ever walk on earth, the devil took me seriously and this is what eternal damnation looks like. But I doubt it, since if anything I woke up looking even worse than usual.  
+I think it works. I can never be sure, because at somepoint the layout changed whenever I refreshed the page, with the same exact grid behaving differently everytime, for who knows what ungodly reason. Maybe it's because last night I half-asleep thought to myself I'd sell my soul to the devil to be the most gorgeous creature to ever walk on earth, the devil took me seriously and this is what eternal damnation looks like. But I doubt it, since if anything I woke up looking even worse than usual.  
 
 As always the JS started somewhat DRY and got progressively soppier until at the end it got as dry as a swimming pool, but the only way to fix it I can think of is creating and toggling classes, and that feels like too much work for now.
 
@@ -38,20 +33,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./images/Screenshot%202024-07-10%20at%2012-30-31%20Frontend%20Mentor%20Room%20homepage.png)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://tortaruga.github.io/room-homepage/](https://tortaruga.github.io/room-homepage/)
 
 ### Built with
 
