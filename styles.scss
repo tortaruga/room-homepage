@@ -229,7 +229,7 @@ footer {
     main {
         display: grid;
         grid-template-columns: 30% 30% 10% 30%;
-        grid-template-rows: 55% max-content 40%;
+        grid-template-rows: 55% fit-content 40%;
         min-height: 100vh;    
         width: 100%;   
     }   
