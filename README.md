@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/room-homepage-with-bem-and-sass-Xq6muKCFQG](https://www.frontendmentor.io/solutions/room-homepage-with-bem-and-sass-Xq6muKCFQG)
 - Live Site URL: [https://tortaruga.github.io/room-homepage/](https://tortaruga.github.io/room-homepage/)
 
 ### Built with
