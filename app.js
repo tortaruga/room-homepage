@@ -136,7 +136,16 @@ window.addEventListener('resize', handleResponsiveDesign)
 function handleResponsiveDesign() {
     if (window.innerWidth > 900) {  
         main.appendChild(mainImgButtons);
+      openMenuButton.style.display = 'none';
+      closeMenuButton.style.display = 'none';
+      menu.style.display = 'none';
+    navLogo.style.display = 'inline-block';
+    nav.style.background = 'transparent';
+    backdrop.style.display = 'none';
+    body.style.overflow = 'auto';
     } else {
         mainImage.appendChild(mainImgButtons);
+      openMenuButton.style.display = 'inline-block';
+      closeMenuButton.style.display = 'inline-block';
     }
 }
