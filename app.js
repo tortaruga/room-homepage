@@ -107,8 +107,7 @@ function changeImage(imagesArray, index)  {
     mainImage.style.backgroundRepeat = 'no-repeat';
 }
 
-
-openMenuBtn.addEventListener('click', () => {
+function openMenu() {
     openMenuBtn.style.display = 'none';
     closeMenuBtn.style.display = 'inline-block';
     menu.style.display = 'flex';
@@ -116,27 +115,65 @@ openMenuBtn.addEventListener('click', () => {
     nav.style.background = 'white';
     backdrop.style.display = 'inline-block';
     body.style.overflow = 'hidden';
+}
+
+openMenuBtn.addEventListener('click', () => {
+    openMenu();
+
+    window.addEventListener('resize', handleResponsiveDesign)
+
 })
 
-closeMenuBtn.addEventListener('click', () => {
+function closeMenu() {
     closeMenuBtn.style.display = 'none';
     openMenuBtn.style.display = 'inline-block';
     menu.style.display = 'none';
     navLogo.style.display = 'inline-block';
     nav.style.background = 'transparent';
     backdrop.style.display = 'none';
-    body.style.overflow = 'auto';
-})
+     body.style.overflow = 'auto';
+}
 
-handleResponsiveDesign();
+closeMenuBtn.addEventListener('click', closeMenu);
+
+handleResponsiveDesign(); 
 
 window.addEventListener('resize', handleResponsiveDesign)
 
 
 function handleResponsiveDesign() {
+
+    if (window.innerWidth > 550 && window.innerWidth < 900) {
+      middleSizeNav()
+    } 
+
     if (window.innerWidth > 900) {  
-        main.appendChild(mainImgButtons);
-    } else {
+        main.appendChild(mainImgButtons); 
+        bigSizeNav();
+ 
+    } else if (window.innerWidth < 550) {
         mainImage.appendChild(mainImgButtons);
-    }
+        closeMenu();
+     }
+}
+
+function middleSizeNav() {
+    closeMenuBtn.style.display = 'none';
+    openMenuBtn.style.display = 'none';
+    menu.style.display = 'flex';
+    navLogo.style.display = 'inline-block';
+    nav.style.background = 'hsl(0, 0%, 63%)';
+    backdrop.style.display = 'none';
+    body.style.overflow = 'auto'; 
+}
+
+function bigSizeNav() {
+    closeMenuBtn.style.display = 'none';
+    openMenuBtn.style.display = 'none';
+    menu.style.display = 'flex';
+    navLogo.style.display = 'inline-block';
+    nav.style.background = 'transparent';
+    backdrop.style.display = 'none';
+    body.style.overflow = 'auto';
+    
 }

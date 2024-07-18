@@ -258,8 +258,7 @@ footer {
   main {
     display: grid;
     grid-template-columns: 30% 30% 10% 30%;
-    grid-template-rows: 55% 5% 40%;
-    min-height: 100vh;
+    grid-template-rows: 55% fit-content 40%;
     width: 100%;
   }
   .main-img {
@@ -292,6 +291,6 @@ footer {
   .main-img__buttons {
     grid-area: 2/3/3/4;
     width: 100%;
-    height: 100%;
+    height: 2.5rem;
   }
 }/*# sourceMappingURL=styles.css.map */
